@@ -8,7 +8,7 @@ type HeaderProps = {
 
 const Header = ({ title, subtitle = 'Subtitulo Teste' }: HeaderProps) => {
   return (
-    <View>
+    <View style={{ marginTop: 16, marginBottom: 16, alignItems: 'center' }}>
       <Text style={{ fontSize: 24, fontWeight: 'bold' }}>{title}</Text>
       {subtitle && <Text>{subtitle}</Text>}
     </View>
